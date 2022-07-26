@@ -42,7 +42,7 @@ def checkCave(chosenCave): #should be "choseCave" not "chosenCave"
 		print 'Gobbles you down in one bite!' #missing parentheses around text
 
 playAgain = 'yes'
-while playAgain = 'yes' or playAgain = 'y':
+while playAgain = 'yes' or playAgain = 'y': #should be == for comparison operator and not =
 	displayIntro()
 	caveNumber = choosecave()
 	checkCave(caveNumber)
