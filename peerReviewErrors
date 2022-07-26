@@ -23,7 +23,7 @@ def chooseCave():
 
 	return caves #should be "cave" not "caves
 
-def checkCave(chosenCave): #should be "chooseCave" not "chosenCave"
+def checkCave(chosenCave): 
 	print('You approach the cave...')
 	#sleep for 2 seconds
 	time.sleep(2)
@@ -36,7 +36,7 @@ def checkCave(chosenCave): #should be "chooseCave" not "chosenCave"
 	time.sleep(2)
 	friendlyCave = random.randint(1, 2)
 
-	if chosenCave == str(friendlyCave): #should be "chooseCave" not "chosenCave".
+	if chosenCave == str(friendlyCave): 
 		print('Gives you his treasure!')
 	else:
 		print 'Gobbles you down in one bite!' #missing parentheses around text
