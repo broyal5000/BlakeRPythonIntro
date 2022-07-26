@@ -1,8 +1,8 @@
 # This is a header for the application
 # You should read this header and insert your name and your date below as part of the peer review
 # This is a typical part of any program
-# Author: <author>
-# Creation Date: <date>
+# Author: Blake Royal
+# Creation Date: 07/26/2022
 # Below is a simple program with 10 issues (some are syntax errors and some are logic errors.  You need to identify the issues and correct them.
 
 import random
@@ -13,7 +13,7 @@ def displayIntro():
 	you see two caves. In one cave, the dragon is friendly
 	and will share his treasure with you. The other dragon
 	is greedy and hungry, and will eat you on sight.''')
-	print()
+	print() #what are you printing? need more context
 
 def chooseCave():
     cave = ''
@@ -21,25 +21,25 @@ def chooseCave():
 		print('Which cave will you go into? (1 or 2)')
 		cave = input()
 
-	return caves
+	return caves #should be "cave" not "caves
 
-def checkCave(chosenCave):
+def checkCave(chosenCave): #should be "choseCave" not "chosenCave"
 	print('You approach the cave...')
 	#sleep for 2 seconds
 	time.sleep(2)
 	print('It is dark and spooky...')
 	#sleep for 2 seconds
-	time.sleep(3)
+	time.sleep(3) #should be time.sleep(2) 
 	print('A large dragon jumps out in front of you! He opens his jaws and...')
-	print()
+	print() #nothing to print, need more context
 	#sleep for 2 seconds
 	time.sleep(2)
 	friendlyCave = random.randint(1, 2)
 
-	if chosenCave == str(friendlyCave):
+	if chosenCave == str(friendlyCave): #chosenCave was never set to pull the value from the return variable "cave" in def chooseCave
 		print('Gives you his treasure!')
 	else:
-		print 'Gobbles you down in one bite!'
+		print 'Gobbles you down in one bite!' #missing parentheses around text
 
 playAgain = 'yes'
 while playAgain = 'yes' or playAgain = 'y':
@@ -50,5 +50,5 @@ while playAgain = 'yes' or playAgain = 'y':
 	print('Do you want to play again? (yes or no)')
 	playAgain = input()
 	if playAgain == "no":
-		print("Thanks for planing")
+		print("Thanks for planing") #should be "playing" not "planing"
 
