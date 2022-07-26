@@ -44,7 +44,7 @@ def checkCave(chosenCave): #should be "choseCave" not "chosenCave"
 playAgain = 'yes'
 while playAgain = 'yes' or playAgain = 'y': #should be == for comparison operator and not =
 	displayIntro()
-	caveNumber = choosecave()
+	caveNumber = choosecave() #should be "chooseCave()" not "choosecave()"
 	checkCave(caveNumber)
     
 	print('Do you want to play again? (yes or no)')
