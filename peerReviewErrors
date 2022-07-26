@@ -46,7 +46,7 @@ while playAgain = 'yes' or playAgain = 'y': #should be == for comparison operato
 	displayIntro()
 	caveNumber = choosecave() #should be "chooseCave()" not "choosecave()"
 	checkCave(caveNumber)
-    
+    				#why is there a empty row here when the next line is the same indention as the previous?
 	print('Do you want to play again? (yes or no)')
 	playAgain = input()
 	if playAgain == "no":
